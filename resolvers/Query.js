@@ -18,6 +18,7 @@ const post = require('./post_query/post');
 const posts = require('./post_query/posts');
 const postsByOrganization = require('./post_query/postsByOrganization');
 const groups = require('./group_query/groups');
+const donation = require('./donation/donation_query');
 
 const organizationsConnection = require('./organization_query/organizations_pagination');
 const postsByOrganizationConnection = require('../resolvers/post_organization_query/organization_post_pagination');
@@ -27,6 +28,7 @@ const {
 } = require('../resolvers/user_query/users_pagination');
 
 const Query = {
+  donation,
   groupChats,
   groupChatMessages,
   directChats,

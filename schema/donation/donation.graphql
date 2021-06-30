@@ -1,0 +1,15 @@
+module.exports = `
+
+  type Donation {
+    gPayUPI: String
+    applePay: String
+    bankDetails: String
+  }
+
+  input DonationInput {
+    gPayUPI: String!
+    applePay: String!
+    bankDetails: String!
+  }
+
+`

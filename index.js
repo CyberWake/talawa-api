@@ -32,6 +32,7 @@ const GroupChat = require('./resolvers/GroupChat');
 const GroupChatMessage = require('./resolvers/GroupChatMessage');
 const Subscription = require('./resolvers/Subscription');
 const AuthenticationDirective = require('./directives/authDirective');
+// const Donation = require('./directives/Donation');
 
 const app = express();
 

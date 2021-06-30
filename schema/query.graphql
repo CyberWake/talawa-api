@@ -3,6 +3,7 @@
 module.exports = `
 
   type Query {
+    donation: Donation
     users(id: ID, orderBy: UserOrderByInput): [User]
     usersConnection(where: UserWhereInput, first: Int, skip: Int, orderBy: UserOrderByInput): [User]!
     organizations(id: ID, orderBy: OrganizationOrderByInput): [Organization]

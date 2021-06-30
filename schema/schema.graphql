@@ -8,6 +8,7 @@ const event = require("./event/event.graphql");
 const newsfeed = require("./newsfeed/newsfeed.graphql");
 const chats = require("./chats/chat.graphql");
 const utils = require("./utils.graphql");
+const donation = require("./donation/donation.graphql");
 
 const typeDefs = gql`
   directive @auth on FIELD_DEFINITION
@@ -45,6 +46,7 @@ const typeDefs = gql`
   ${newsfeed}
   ${chats}
   ${utils}
+  ${donation}
 
   type Subscription {
     messageSentToDirectChat: DirectChatMessage

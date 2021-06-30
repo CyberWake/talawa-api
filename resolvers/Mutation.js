@@ -1,3 +1,4 @@
+const donation = require('./donation/donation_mutation');
 const signUp = require('./auth_mutations/signup');
 const login = require('./auth_mutations/login');
 const refreshToken = require('./auth_mutations/refresh_token');
@@ -69,6 +70,7 @@ const removeUserFromGroupChat = require('./group_chat_mutations/removeUserFromGr
 const updateLanguage = require('./language_mutation/updateLanguage');
 
 const Mutation = {
+  donation,
   signUp,
   login,
   refreshToken,
