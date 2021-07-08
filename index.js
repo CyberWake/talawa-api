@@ -32,7 +32,7 @@ const GroupChat = require('./resolvers/GroupChat');
 const GroupChatMessage = require('./resolvers/GroupChatMessage');
 const Subscription = require('./resolvers/Subscription');
 const AuthenticationDirective = require('./directives/authDirective');
-// const Donation = require('./directives/Donation');
+const Donation = require('./resolvers/Donation');
 
 const app = express();
 
@@ -41,6 +41,7 @@ app.use(requestTracing.middleware());
 const pubsub = new PubSub();
 
 const resolvers = {
+  Donation,
   Subscription,
   Query,
   Mutation,

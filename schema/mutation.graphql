@@ -1,7 +1,7 @@
 module.exports = `
 
  type Mutation {
-    donation(data: DonationInput!): Donation
+    donation(data: DonationInput!): Donation!
     signUp(data: UserInput!, file:Upload): AuthData!
     login(data: LoginInput!): AuthData!
     refreshToken(refreshToken: String!) : ExtendSession!
